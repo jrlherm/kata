@@ -33,9 +33,10 @@ or
 ```
 
 Other examples:
-In ```ruby["NORTH", "SOUTH", "EAST", "WEST"]```, the direction "NORTH" + "SOUTH" is going north and coming back right away.
-The path becomes ["EAST", "WEST"], now "EAST" and "WEST" annihilate each other, therefore, the final result is [] (nil in Clojure).
-In ["NORTH", "EAST", "WEST", "SOUTH", "WEST", "WEST"], "NORTH" and "SOUTH" are not directly opposite but they become directly opposite after the reduction of "EAST" and "WEST" so the whole path is reducible to ["WEST", "WEST"].
+In ```ruby["NORTH", "SOUTH", "EAST", "WEST"]```, the direction ```ruby"NORTH" + "SOUTH"``` is going north and coming back right away.
+The path becomes ```ruby["EAST", "WEST"]```, now ```ruby"EAST"``` and ```ruby"WEST"``` annihilate each other, therefore, the final result is [] (nil in Clojure).
+In ```ruby["NORTH", "EAST", "WEST", "SOUTH", "WEST", "WEST"]```
+, "NORTH" and "SOUTH" are not directly opposite but they become directly opposite after the reduction of "EAST" and "WEST" so the whole path is reducible to ["WEST", "WEST"].
 Task
 
 Write a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).
