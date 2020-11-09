@@ -7,11 +7,17 @@ Going to one direction and coming back the opposite direction right away is a ne
 How I crossed a mountain desert the smart way.
 
 The directions given to the man are, for example, the following (depending on the language):
+```ruby
 ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"].
+```
 or
+```ruby
 { "NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST" };
+```
 or
+```ruby
 [North, South, South, East, West, North, West]
+```
 
 You can immediatly see that going "NORTH" and immediately "SOUTH" is not reasonable, better stay to the same place! So the task is to give to the man a simplified version of the plan. A better plan in this case is simply:
 ["WEST"]
