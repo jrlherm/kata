@@ -4,7 +4,8 @@ Complete the method which returns the number which is most frequent in the given
 
 > Note: no empty arrays will be given.
 
-### Examples
+### **Examples**
+
 ```ruby
 [12, 10, 8, 12, 7, 6, 4, 10, 12]              -->  12
 [12, 10, 8, 12, 7, 6, 4, 10, 12, 10]          -->  12
